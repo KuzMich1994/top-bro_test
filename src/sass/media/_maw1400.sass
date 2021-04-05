@@ -1,0 +1,83 @@
+@media ( max-width: 1400px )
+  .container
+    max-width: 920px
+  .blogers
+    &__cards
+      justify-content: flex-start
+      height: 100%
+    &__card
+      width: 270px
+      height: 270px
+      margin-right: 20px
+      margin-bottom: 20px
+      &:nth-child(3n)
+        margin-right: 0
+      &-title
+        font-size: 26px
+      &-content
+        max-width: 240px
+      &-social
+        &-counter
+          font-size: 16px
+  .footer
+    &__logo
+      width: 150px
+      height: 150px
+    &__contacts
+      flex-wrap: wrap
+      max-width: 522px
+      &-link
+        &:nth-child(-n + 2)
+          margin-bottom: 10px
+    &__social
+      flex-basis: 19%
+  .bloger
+    &__card
+      &-title
+        font-size: 38px
+        line-height: 46px
+        padding-bottom: 20px
+        margin-bottom: 20px
+      &-img
+        max-width: 359px
+        max-height: 520px
+      &-social
+        max-width: 427px
+        &-card
+          &-icon
+            width: 44px
+            height: 44px
+          &-counter
+            font-size: 26px
+            line-height: 32px
+          &-subscribers
+            font-size: 14px
+  .movies
+    &__card
+      max-width: 444px
+      margin-bottom: 30px
+      &:nth-last-child(-n + 2)
+        margin-bottom: 0
+      &-link
+        width: 444px
+  .other
+    &__slide
+      &::after
+        max-width: 100%
+        bottom: 0px
+      &-title
+        font-size: 23px
+        line-height: 25px
+      &-content
+        bottom: 21px
+      &-socials
+        max-width: 238px
+      &-social
+        &-counter
+          font-size: 16px
+        &-icon
+          width: 20px
+          &_instagram
+            height: 20px
+    &__scrollbar
+      width: 244px

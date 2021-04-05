@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Топ Бро</title>
+</head>
+<body>
+  <div id="aura"></div>
+  <div id="cursor"></div>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__row">
+        <a href="./index.html" class="header__logo">
+          <img src="./img/Header-logo.svg" alt="Логотип">
+        </a>
+        <nav class="header__navbar">
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item"><a href="#" class="header__navbar-linl">Блогеры</a></li>
+            <li class="header__navbar-item"><a href="#" class="header__navbar-linl">Кейсы</a></li>
+            <li class="header__navbar-item"><a href="#" class="header__navbar-linl">exit agency</a></li>
+            <li class="header__navbar-item"><a href="#" class="header__navbar-linl">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__lang">
+          <span class="header__lang-element ru">ru</span> / <span class="header__lang-element en">en</span>
+        </div>
+        <div class="header__button">
+          <span class="header__button-line"></span>
+          <span class="header__button-line"></span>
+          <span class="header__button-line"></span>
+        </div>
+      </div>
+      <div class="header__mobile-menu">
+        <nav class="header__navbar header__navbar_mobile">
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item"><a href="#" class="header__navbar-linl">Блогеры</a></li>
+            <li class="header__navbar-item"><a href="#" class="header__navbar-linl">Кейсы</a></li>
+            <li class="header__navbar-item"><a href="#" class="header__navbar-linl">exit agency</a></li>
+            <li class="header__navbar-item"><a href="#" class="header__navbar-linl">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__lang header__lang_mobile">
+          <span class="header__lang-element ru">ru</span> / <span class="header__lang-element en">en</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="bradcrumbs">
+    <div class="container">
+      <nav class="bradcrumbs__navigation">
+        <a href="./index.html" class="bradcrumbs__navigation-link">Главная</a>
+        <a href="./bloger.html" class="bradcrumbs__navigation-link bradcrumbs__navigation-link_active">Блогеры</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="blogers">
+    <div class="container">
+      <h1 class="blogers__title">Блогеры</h1>
+      <div class="blogers__filter">
+        <span class="blogers__filter-text">Сортировать по:</span>
+        <div class="blogers__filter-selector">
+          <span class="blogers__filter-selector-output">выберете площадку</span>
+          <ul class="blogers__filter-selector-list">
+            <li class="blogers__filter-selector-info">Например: Путешествия</li>
+            <li class="blogers__filter-selector-item" data-category="all">Все</li>
+            <li class="blogers__filter-selector-item" data-category="diy">DIY</li>
+            <li class="blogers__filter-selector-item" data-category="auto">Авто</li>
+            <li class="blogers__filter-selector-item" data-category="unboxing">Анбоксинг</li>
+            <li class="blogers__filter-selector-item" data-category="food">Еда</li>
+            <li class="blogers__filter-selector-item" data-category="animals">Животные</li>
+            <li class="blogers__filter-selector-item" data-category="games">Игры</li>
+            <li class="blogers__filter-selector-item" data-category="langs">Иностранные языки</li>
+            <li class="blogers__filter-selector-item" data-category="movies">Кино</li>
+            <li class="blogers__filter-selector-item" data-category="beauty">Красота</li>
+          </ul>
+        </div>
+        <div class="blogers__filter-selector">
+          <span class="blogers__filter-selector-output">выберете направление</span>
+          <ul class="blogers__filter-selector-list">
+            <li class="blogers__filter-selector-info">Например: Путешествия</li>
+            <li class="blogers__filter-selector-item" data-category="all">Все</li>
+            <li class="blogers__filter-selector-item" data-category="diy">DIY</li>
+            <li class="blogers__filter-selector-item" data-category="auto">Авто</li>
+            <li class="blogers__filter-selector-item" data-category="unboxing">Анбоксинг</li>
+            <li class="blogers__filter-selector-item" data-category="food">Еда</li>
+            <li class="blogers__filter-selector-item" data-category="animals">Животные</li>
+            <li class="blogers__filter-selector-item" data-category="games">Игры</li>
+            <li class="blogers__filter-selector-item" data-category="langs">Иностранные языки</li>
+            <li class="blogers__filter-selector-item" data-category="movies">Кино</li>
+            <li class="blogers__filter-selector-item" data-category="beauty">Красота</li>
+          </ul>
+        </div>
+      </div>
+      <div class="blogers__cards">
+        <div class="blogers__card" data-src="./img/bloger-1.jpeg">
+          <a href="./bloger.html" class="blogers__card-link"><img src="./img/bloger-1.png" alt="Блогер" class="blogers__card-bg"></a>
+          <div class="blogers__card-content">
+            <h2 class="blogers__card-title">Макс Максимов</h2>
+            <div class="blogers__card-socials">
+              <a href="#" class="blogers__card-social">
+                <img src="./img/youtube.svg" alt="youtube" class="blogers__card-social-icon">
+                <span class="blogers__card-social-counter">3 160 000+</span>
+              </a>
+              <a href="#" class="blogers__card-social">
+                <img src="./img/vkontakte.svg" alt="vkontakte" class="blogers__card-social-icon">
+                <span class="blogers__card-social-counter">134 000+</span>
+              </a>
+              <a href="#" class="blogers__card-social">
+                <img src="./img/instagram.svg" alt="instagram" class="blogers__card-social-icon blogers__card-social-icon_instagram">
+                <span class="blogers__card-social-counter">128 000+</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="blogers__card" data-src="./img/bloger-2.jpeg">
+          <a href="./bloger.html" class="blogers__card-link"><img src="./img/bloger-2.png" alt="Блогер" class="blogers__card-bg"></a>
+          <div class="blogers__card-content">
+            <h2 class="blogers__card-title">Макс Максимов</h2>
+            <div class="blogers__card-socials">
+              <a href="#" class="blogers__card-social">
+                <img src="./img/youtube.svg" alt="youtube" class="blogers__card-social-icon">
+                <span class="blogers__card-social-counter">3 160 000+</span>
+              </a>
+              <a href="#" class="blogers__card-social">
+                <img src="./img/vkontakte.svg" alt="vkontakte" class="blogers__card-social-icon">
+                <span class="blogers__card-social-counter">134 000+</span>
+              </a>
+              <a href="#" class="blogers__card-social">
+                <img src="./img/instagram.svg" alt="instagram" class="blogers__card-social-icon blogers__card-social-icon_instagram">
+                <span class="blogers__card-social-counter">128 000+</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="blogers__card" data-src="./img/bloger-3.jpeg">
+          <a href="./bloger.html" class="blogers__card-link"><img src="./img/bloger-3.png" alt="Блогер" class="blogers__card-bg"></a>
+          <div class="blogers__card-content">
+            <h2 class="blogers__card-title">Макс Максимов</h2>
+            <div class="blogers__card-socials">
+              <a href="#" class="blogers__card-social">
+                <img src="./img/youtube.svg" alt="youtube" class="blogers__card-social-icon">
+                <span class="blogers__card-social-counter">3 160 000+</span>
+              </a>
+              <a href="#" class="blogers__card-social">
+                <img src="./img/vkontakte.svg" alt="vkontakte" class="blogers__card-social-icon">
+                <span class="blogers__card-social-counter">134 000+</span>
+              </a>
+              <a href="#" class="blogers__card-social">
+                <img src="./img/instagram.svg" alt="instagram" class="blogers__card-social-icon blogers__card-social-icon_instagram">
+                <span class="blogers__card-social-counter">128 000+</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="blogers__card" data-src="./img/bloger-4.jpeg">
+          <a href="./bloger.html" class="blogers__card-link"><img src="./img/bloger-4.png" alt="Блогер" class="blogers__card-bg"></a>
+          <div class="blogers__card-content">
+            <h2 class="blogers__card-title">Макс Максимов</h2>
+            <div class="blogers__card-socials">
+              <a href="#" class="blogers__card-social">
+                <img src="./img/youtube.svg" alt="youtube" class="blogers__card-social-icon">
+                <span class="blogers__card-social-counter">3 160 000+</span>
+              </a>
+              <a href="#" class="blogers__card-social">
+                <img src="./img/vkontakte.svg" alt="vkontakte" class="blogers__card-social-icon">
+                <span class="blogers__card-social-counter">134 000+</span>
+              </a>
+              <a href="#" class="blogers__card-social">
+                <img src="./img/instagram.svg" alt="instagram" class="blogers__card-social-icon blogers__card-social-icon_instagram">
+                <span class="blogers__card-social-counter">128 000+</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="blogers__card" data-src="./img/bloger-5.jpeg">
+          <a href="./bloger.html" class="blogers__card-link"><img src="./img/bloger-5.png" alt="Блогер" class="blogers__card-bg"></a>
+          <div class="blogers__card-content">
+            <h2 class="blogers__card-title">Макс Максимов</h2>
+            <div class="blogers__card-socials">
+              <a href="#" class="blogers__card-social">
+                <img src="./img/youtube.svg" alt="youtube" class="blogers__card-social-icon">
+                <span class="blogers__card-social-counter">3 160 000+</span>
+              </a>
+              <a href="#" class="blogers__card-social">
+                <img src="./img/vkontakte.svg" alt="vkontakte" class="blogers__card-social-icon">
+                <span class="blogers__card-social-counter">134 000+</span>
+              </a>
+              <a href="#" class="blogers__card-social">
+                <img src="./img/instagram.svg" alt="instagram" class="blogers__card-social-icon blogers__card-social-icon_instagram">
+                <span class="blogers__card-social-counter">128 000+</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="blogers__card" data-src="./img/bloger-6.jpeg">
+          <a href="./bloger.html" class="blogers__card-link"><img src="./img/bloger-6.png" alt="Блогер" class="blogers__card-bg"></a>
+          <div class="blogers__card-content">
+            <h2 class="blogers__card-title">Макс Максимов</h2>
+            <div class="blogers__card-socials">
+              <a href="#" class="blogers__card-social">
+                <img src="./img/youtube.svg" alt="youtube" class="blogers__card-social-icon">
+                <span class="blogers__card-social-counter">3 160 000+</span>
+              </a>
+              <a href="#" class="blogers__card-social">
+                <img src="./img/vkontakte.svg" alt="vkontakte" class="blogers__card-social-icon">
+                <span class="blogers__card-social-counter">134 000+</span>
+              </a>
+              <a href="#" class="blogers__card-social">
+                <img src="./img/instagram.svg" alt="instagram" class="blogers__card-social-icon blogers__card-social-icon_instagram">
+                <span class="blogers__card-social-counter">128 000+</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="blogers__card" data-src="./img/bloger-7.jpeg">
+          <a href="./bloger.html" class="blogers__card-link"><img src="./img/bloger-7.png" alt="Блогер" class="blogers__card-bg"></a>
+          <div class="blogers__card-content">
+            <h2 class="blogers__card-title">Макс Максимов</h2>
+            <div class="blogers__card-socials">
+              <a href="#" class="blogers__card-social">
+                <img src="./img/youtube.svg" alt="youtube" class="blogers__card-social-icon">
+                <span class="blogers__card-social-counter">3 160 000+</span>
+              </a>
+              <a href="#" class="blogers__card-social">
+                <img src="./img/vkontakte.svg" alt="vkontakte" class="blogers__card-social-icon">
+                <span class="blogers__card-social-counter">134 000+</span>
+              </a>
+              <a href="#" class="blogers__card-social">
+                <img src="./img/instagram.svg" alt="instagram" class="blogers__card-social-icon blogers__card-social-icon_instagram">
+                <span class="blogers__card-social-counter">128 000+</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="blogers__card" data-src="./img/bloger-8.jpeg">
+          <a href="./bloger.html" class="blogers__card-link"><img src="./img/bloger-8.png" alt="Блогер" class="blogers__card-bg"></a>
+          <div class="blogers__card-content">
+            <h2 class="blogers__card-title">Макс Максимов</h2>
+            <div class="blogers__card-socials">
+              <a href="#" class="blogers__card-social">
+                <img src="./img/youtube.svg" alt="youtube" class="blogers__card-social-icon">
+                <span class="blogers__card-social-counter">3 160 000+</span>
+              </a>
+              <a href="#" class="blogers__card-social">
+                <img src="./img/vkontakte.svg" alt="vkontakte" class="blogers__card-social-icon">
+                <span class="blogers__card-social-counter">134 000+</span>
+              </a>
+              <a href="#" class="blogers__card-social">
+                <img src="./img/instagram.svg" alt="instagram" class="blogers__card-social-icon blogers__card-social-icon_instagram">
+                <span class="blogers__card-social-counter">128 000+</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="blogers__loading">Подгружаем...</span>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__row">
+        <a href="./index.html" class="footer__logo"><img src="./img/Header-logo.svg" alt="Логотип"></a>
+          <div class="footer__contacts">
+            <a href="#" class="footer__contacts-link">Cвязаться с нами</a>
+            <a href="mailto:reklama@wildjam.ru" class="footer__contacts-link">reklama@wildjam.ru</a>
+            <span class="footer__contacts-adres">ул. Сущевская, д. 27, стр. 2</span>
+            <a href="tel:84993933962" class="footer__contacts-link">+7 (499) 393-39-62</a>
+          </div>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link">
+              <img src="./img/footer-vk.svg" alt="Иконка">
+            </a><a href="#" class="footer__social-link">
+              <img src="./img/footer-inst.svg" alt="Иконка">
+            </a>
+          </div>
+        </div>
+      </div>
+  </footer>
+</body>
+</html>

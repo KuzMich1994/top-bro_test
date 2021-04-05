@@ -1,0 +1,60 @@
+*
+  box-sizing: border-box
+  cursor: none
+body
+  background: $primary-color
+  color: $text-color
+  font-family: 'Montserrat', sans-serif
+  font-style: normal
+  font-weight: bold
+  font-size: 30px
+  line-height: 37px
+  cursor: none
+img
+  max-width: 100%
+  height: 100%
+a
+  text-decoration: none
+  color: inherit
+ul
+  padding: 0
+  margin: 0
+  list-style: none
+.container
+  max-width: 1304px
+  margin: auto
+.hover
+  z-index: 19
+
+// #cursor, #aura
+//   position: absolute
+//   border-radius: 100%
+#cursor
+  position: absolute
+  top: 0
+  left: 0
+  width: 20px
+  height: 20px
+  background-color: #FE8B4C
+  z-index: 1000
+  border-radius: 50%
+  user-select: none
+  pointer-events: none
+#aura
+  position: absolute
+  width: 79px
+  height: 79px
+  border: 2px solid #FE8B4C
+  border-radius: 50%
+  background: none
+  z-index: 1000
+  user-select: none
+  pointer-events: none
+  transform: scale(0)
+
+.visible
+  transform: scale(1) !important
+.hidden
+  display: none
+.scroll-hidden
+  overflow: hidden

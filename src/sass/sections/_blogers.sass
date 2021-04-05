@@ -1,0 +1,192 @@
+.blogers
+  position: relative
+  padding-top: 33px
+  padding-bottom: 59px
+  border-bottom: 1px solid #EFF3F5
+  &__title
+    margin: 0
+    margin-bottom: 54px
+    text-align: center
+    font-style: normal
+    font-weight: 800
+    font-size: 50px
+    line-height: 61px
+  &__loading
+    position: absolute
+    bottom: -8px
+    left: 50%
+    transform: translateX(-50%)
+    display: block
+    width: 240px
+    height: 19px
+    font-style: normal
+    font-weight: 300
+    font-size: 15px
+    line-height: 18px
+    text-align: center
+    background-color: $primary-color
+  &__cards
+    height: 672px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+  &__card
+    margin-bottom: 50px
+    position: relative
+    width: 311px
+    height: 311px
+    &:hover
+      box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.25)
+      &::after
+        background: none
+      .blogers__card-content
+        display: none
+      .blogers__card-link
+        z-index: 20
+    &::after
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      content: ''
+      background: rgba(189, 28, 159, 0.5)
+    &-bg
+      position: relative
+      width: 100%
+      height: 100%
+      // object-fit: cover
+    &-content
+      position: absolute
+      bottom: 20px
+      left: 12px
+      max-width: 286px
+      max-height: 105px
+      z-index: 2
+    &-title
+      margin: 0
+      margin-bottom: 10px
+      font-style: normal
+      font-weight: bold
+      font-size: 30px
+      line-height: 37px
+    &-socials
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      // height: 58px
+    &-link
+      position: absolute
+      width: 100%
+      height: 100%
+    &-social
+      // height: 24px
+      display: flex
+      align-items: center
+      &:last-child
+        margin-top: 10px
+      &-icon
+        margin-right: 10px
+        width: 24px
+        height: 16px
+        &_instagram
+          width: 24px
+          height: 24px
+      &-counter
+        font-style: normal
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
+  &__filter
+    margin-bottom: 50px
+    max-width: 674px
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    &-text
+      font-style: normal
+      font-weight: 600
+      font-size: 20px
+      line-height: 24px
+    &-selector
+      min-width: 171px
+      position: relative
+      display: flex
+      flex-direction: column
+      &::after
+        position: absolute
+        right: -25px
+        top: 0
+        content: ''
+        background: url(../img/select-arrow.svg)
+        width: 24px
+        height: 24px
+        transform: rotate(-90deg)
+        transition: all .5s
+      &_active
+        &::after
+          position: absolute
+          right: -26px
+          top: 0
+          content: ''
+          background: url(../img/select-arrow.svg)
+          width: 24px
+          height: 24px
+          transform: rotate(0deg)
+          transition: all .5s
+      &-output
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+      &-list
+        position: absolute
+        top: 25px
+        left: 0
+        right: 0
+        max-width: 224px
+        width: 224px
+        height: 0
+        // background: rgba(110, 16, 94, 0.5)
+        backdrop-filter: blur(20px)
+        border: 0.5px solid transparent
+        box-shadow: inset 0px 0px 5px 5px rgba(255, 255, 255, 0.25)
+        border-radius: 12px
+        transition: all .5s
+        z-index: 20
+        overflow: hidden
+        &::after
+          position: absolute
+          bottom: 5px
+          left: 50%
+          transform: translateX(-50%)
+          content: ''
+          background: url(../img/select-arrow.svg)
+          width: 24px
+          height: 24px
+        &_active
+          height: 381px
+          border: 0.5px solid #000000
+          padding: 10px 10px 0 10px
+          transition: all .5s
+          background: rgba(110, 16, 94, 0.5)
+      &-info
+        margin-bottom: 5px
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        opacity: 0.4
+      &-item
+        padding: 3px 0 3px 10px
+        margin-bottom: 7px
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        border-radius: 5px
+        &:hover
+          background-color: #D26600

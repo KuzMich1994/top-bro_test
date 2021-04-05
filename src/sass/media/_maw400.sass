@@ -1,0 +1,22 @@
+@media ( max-width: 400px )
+  .bloger
+    &__card
+      &-title
+        text-align: center
+        font-size: 22px
+        line-height: 24px
+      &-social
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        &-card
+          max-width: 160px
+          width: 100%
+          &:last-child
+            margin-top: 0
+          &:nth-child(-n + 2)
+            margin-bottom: 20px
+      &-info
+        &-title
+          font-size: 21px
+          line-height: 23px

@@ -1,0 +1,128 @@
+@media ( max-width: 768px )
+  #aura
+    display: none
+  #cursor
+    display: none
+  .container
+    width: 92%
+  .header
+    padding-bottom: 0
+    margin-bottom: 30px
+    z-index: 999
+    &__logo
+      width: 58px
+      height: 66px
+    &__navbar
+      display: none
+      &_mobile
+        display: flex
+        flex-direction: column
+        border-bottom: 1px solid #000
+        width: max-content
+        margin-bottom: 20px
+      &-list
+        flex-direction: column
+      &-item
+        margin-bottom: 20px
+        font-size: 26px
+        line-height: 30px
+    &__lang
+      display: none
+      &_mobile
+        display: block
+        font-size: 28px
+    &__mobile-menu
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      height: 100vh
+      display: none
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      background-color: #fff
+      color: #000
+      z-index: 999
+      &_active
+        display: flex
+    &__button
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      width: 40px
+      height: 20px
+      z-index: 1000
+      &-line
+        background-color: #EFF3F5
+        width: 100%
+        height: 3px
+        &_active
+          background-color: #000
+  .blogers
+    &__title
+      font-size: 35px
+      margin-bottom: 24px
+    &__card
+      width: 100%
+      height: 550px
+      &-bg
+        object-fit: cover
+        // width: 100
+    &__filter
+      flex-direction: column
+      margin-bottom: 20px
+      &-text
+        margin-bottom: 5px
+      &-selector
+        margin-bottom: 5px
+  .footer
+    &__row
+      flex-direction: column
+    &__contacts
+      flex-direction: column
+      margin-bottom: 20px
+      &-adres
+        margin-bottom: 10px
+  .bloger
+    &__card
+      flex-direction: column
+      &-img
+        max-width: 100%
+        width: 100%
+        height: 500px
+        object-fit: cover
+  .movies
+    &__title
+      font-size: 35px
+      margin-bottom: 24px
+    &__wrapper
+      flex-wrap: wrap
+    &__card
+      flex-basis: 47%
+      // max-width: 265px
+      margin: 0
+      margin-bottom: 20px
+      &:nth-child(-n + 3)
+        margin-bottom: 20px
+      &-link
+        max-width: 100%
+  .other
+    &__title
+      font-size: 35px
+      margin-bottom: 24px
+    &__slider
+      width: 100%
+      height: 550px
+    &__slide
+      width: 100% !important
+      height: 500px !important
+      &-arrow
+        &_prev
+          left: 0
+        &_next
+          left: 285px
+    &__scrollbar
+      left: 30px
+      max-width: 250px

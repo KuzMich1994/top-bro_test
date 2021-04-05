@@ -1,0 +1,56 @@
+.movies
+  padding-bottom: 80px
+  &__title
+    margin: 0
+    margin-bottom: 50px
+    font-style: normal
+    font-weight: 800
+    font-size: 50px
+    line-height: 61px
+    text-align: center
+  &__wrapper
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+  &__card
+    position: relative
+    max-width: 421px
+    max-height: 217px
+    &:nth-child(-n + 3)
+      margin-bottom: 30px
+    &::before
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      content: ''
+      width: 60px
+      height: 60px
+      background: url(../img/play.svg)
+      background-repeat: no-repeat
+      background-position: center
+      z-index: 2
+    &::after
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      content: ''
+      width: 100%
+      background: rgba(110, 16, 94, 0.25)
+    &-link
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 421px
+      height: 217px
+      display: block
+      z-index: 3
+    &-img
+      width: 100%
+      height: 217px
+      object-fit: cover
